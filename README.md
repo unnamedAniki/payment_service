@@ -16,7 +16,7 @@
     - Request/Response DTO на Pydantic v2
     - Dependency Injection для сервисов и сессий
 
-- **Domain Layer (Business Logic)**
+- **Services Layer (Business Logic)**
     - Entities — доменная сущность `Payment`
     - Services — use-cases (`PaymentService`)
     - Repository interfaces (порты) — абстрактные контракты
@@ -59,7 +59,7 @@
             - `routes/payments.py` — Endpoints: POST/GET payments
             - `deps.py` — Dependency Injection
             - `router.py` — Объединение роутеров
-        - `domain/` — Бизнес-логика (ядро)
+        - `services/` — Бизнес-логика (ядро)
             - `entities.py` — Доменная сущность Payment
             - `exceptions.py` — Доменные исключения
             - `repositories.py` — Порты (абстрактные интерфейсы)
